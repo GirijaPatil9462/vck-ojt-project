@@ -1,210 +1,32 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* src/App.css */
+/* General Layout for the entire app */
+.main-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #F4F7F6;
+  /* A very light grey background for the whole app */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Content Area for pages */
+.content {
+  background-color: #52d2d2;
+  /* Match header background */
+
+  flex-grow: 1;
+  /* This will make the content area take up all available space */
+  display: flex;
+  /* Use flex to center page content */
+  justify-content: center;
+  align-items: flex-start;
+  /* Align content to the top within the space */
+  padding: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
-.body {
-  font-family: Arial, sans-serif;
+/* Keep any general body/html resets or root styles here if they exist */
+html,
+body {
   margin: 0;
   padding: 0;
-  background: hsl(174, 26%, 93%);
-}
-
-.header {
-  background: hwb(212 15% 79%);
-  color: white;
-  padding: 10px;
-  text-align: center;
-}
-
-.nav {
-  background: #222;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  padding: 10px 0;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.container {
-   margin: 0 auto; /* Centers the content */
-  max-width: 900px; /* Adjust as needed */
-  background: #e5edee;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center; /* Centers text inside */
-
-}
-
-.h1 {
-  color: #007bff;
-  text-align: center;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-.cta-button {
-  display: block;
-  width: 200px;
-  margin: 20px auto 0;
-  background: green;
-  color: white;
-  padding: 10px;
-  border: none;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 4px;
-  cursor: pointer;
-  text-decoration: none;
-  position:center bottom;
-  bottom: 40px;
-  left: 50%;
-  right: 50%;
-  transform: translateX(-6%);
-
-}
-
-.cta-button:hover {
-  background: darkgreen;
-
-}
-
-a{
-  color:rgb(23, 20, 20);
-}
-  
- 
-
-
-body {
- display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 60h; /* Ensures full height */
-  flex-direction: column; /* Keeps elements stacked */
-
-}
-
-
-nav {
-  background: #222;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px 0;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.container {
-  max-width: 800px;
-  background: #ecf4f5
-;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-h1, h2 {
-  color: hwb(212 15% 79%);
-}
-
-ul {
-  padding-left: 20px;
-}
-
-p, li {
-  line-height: 1.6;
-}
-
-.section-title {
-  font-weight: bold;
-  margin-top: 25px;
-}
-
-.small-text {
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 10px;
-}
-
-.r {
-  text-align:center;
-}
-.note {
-      text-align: center;
-      margin-top: 20px;
-      font-size: 0.9rem;
-      color: #555;
-}
-
-#contactForm {
-    width: 150%;
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-input, textarea {
-    width: 95%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-textarea {
-    resize: none;
+  font-family: Arial, sans-serif;
 }
